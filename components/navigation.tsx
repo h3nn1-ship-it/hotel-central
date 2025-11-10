@@ -17,11 +17,12 @@ export default function Navigation() {
 	const menuItems: NavigationItem[] = [
 		{ name: 'Der Verein', href: '/' },
 		{ name: 'Vision', href: '/vision' },
-		{ name: 'Events', href: '/events' },
+		/*{ name: 'Events', href: '/events' },*/
 		{
-			name: 'Festival', href: '/festival/2024', subItems: [
+			name: 'Festival', href: 'http://hotelcentral.live', subItems: [
 				{ name: '2023', href: '/festival/2023' },
-				{ name: '2024', href: '/festival/2024' }
+				{ name: '2024', href: '/festival/2024' },
+				{ name: '2025', href: 'http://hotelcentral.live/' }
 			]
 		},
 		{
@@ -113,7 +114,7 @@ export default function Navigation() {
 									</Link>
 									{item.subItems && (
 										<div
-											className='md:absolute top-8 -left-1/2 z-10 md:hidden rounded-lg md:bg-white md:shadow dropdown-menu md:group-hover:block'>
+											className='md:absolute top-8 -left-16 z-10 md:hidden rounded-lg md:bg-white md:shadow dropdown-menu md:group-hover:block'>
 											<ul className='flex flex-row text-sm text-gray-700 justify-center'>
 												{item.subItems.map((subItem) => (
 													<li key={subItem.name}>
