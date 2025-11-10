@@ -22,7 +22,7 @@ export default function Navigation() {
 			name: 'Festival', href: 'http://hotelcentral.live', subItems: [
 				{ name: '2023', href: '/festival/2023' },
 				{ name: '2024', href: '/festival/2024' },
-				{ name: '2025', href: 'http://hotelcentral.live/' }
+				{ name: '2025', href: 'https://hotelcentral.live/' }
 			]
 		},
 		{
