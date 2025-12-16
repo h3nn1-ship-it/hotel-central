@@ -1,49 +1,49 @@
 {
-	"name": "hotel-central",
-	"version": "1.0.0",
-	"license": "MIT",
-	"engines": {
-		"node": "22"
-	},
-	"scripts": {
-		"dev": "next --turbo",
-		"build": "next build",
-		"start": "next start",
-		"type-check": "tsc",
-		"pretty": "yarn prettier --write ."
-	},
-	"dependencies": {
-		"@portabletext/react": "^5.0.0",
-		"@sanity/image-url": "^1.2.0",
-		"gsap": "^3.13.0",
-		"next": "^16.0.1",
-		"next-sanity": "^11.6.5",
-		"react": "^19.2.0",
-		"react-dom": "^19.2.0",
-		"sanity": "^4.14.2",
-		"styled-components": "^6.1.19",
-		"tailwindcss": "^4.1.17"
-	},
-	"devDependencies": {
-		"@tailwindcss/postcss": "^4.1.17",
-		"@types/node": "^24.10.0",
-		"@types/react": "^19.2.2",
-		"autoprefixer": "^10.4.21",
-		"postcss": "^8.5.6",
-		"prettier": "^3.6.2",
-		"typescript": "^5.9.3"
-	},
-	"prettier": {
-		"useTabs": true,
-		"tabWidth": 4,
-		"singleQuote": true,
-		"quoteProps": "as-needed",
-		"jsxSingleQuote": true,
-		"bracketSameLine": true,
-		"printWidth": 120,
-		"endOfLine": "auto",
-		"semi": true,
-		"bracketSpacing": true,
-		"arrowParens": "avoid"
-	}
+  "name": "hotel-central",
+  "version": "1.0.0",
+  "license": "MIT",
+  "engines": {
+    "node": "22"
+  },
+  "scripts": {
+    "dev": "next --turbo",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc",
+    "pretty": "yarn prettier --write ."
+  },
+  "dependencies": {
+    "@portabletext/react": "^5.0.0",
+    "@sanity/image-url": "^1.2.0",
+    "gsap": "^3.13.0",
+    "next": "16.0.10",
+    "next-sanity": "^11.6.5",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "sanity": "^4.14.2",
+    "styled-components": "^6.1.19",
+    "tailwindcss": "^4.1.17"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.17",
+    "@types/node": "^24.10.0",
+    "@types/react": "^19.2.2",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3"
+  },
+  "prettier": {
+    "useTabs": true,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "quoteProps": "as-needed",
+    "jsxSingleQuote": true,
+    "bracketSameLine": true,
+    "printWidth": 120,
+    "endOfLine": "auto",
+    "semi": true,
+    "bracketSpacing": true,
+    "arrowParens": "avoid"
+  }
 }
