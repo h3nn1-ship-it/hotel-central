@@ -2700,12 +2700,7 @@
     lodash "^4.17.21"
     ts-brand "^0.2.0"
 
-"@sanity/image-url@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@sanity/image-url/-/image-url-1.2.0.tgz#5e8b69d4b079fbcf89138660849f52960066c71e"
-  integrity sha512-pYRhti+lDi22it+npWXkEGuYyzbXJLF+d0TYLiyWbKu46JHhYhTDKkp6zmGu4YKF5cXUjT6pnUjFsaf2vlB9nQ==
-
-"@sanity/image-url@^2.0.1":
+"@sanity/image-url@^2.0.0", "@sanity/image-url@^2.0.1":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@sanity/image-url/-/image-url-2.0.2.tgz#7f9c22f304ec002ad4b8e9b179ef2c981b42f31f"
   integrity sha512-JnwFIHATLXHGVTCKmVwV0xy3xKwGlgVfeUB9cWxu72xJZMsQUyFgGiTz4zD9gRXuncAndkmtzHeIG+2vhKgxHA==
@@ -6088,7 +6083,7 @@ next-sanity@^11.6.5:
     server-only "^0.0.1"
     use-effect-event "^2.0.3"
 
-next@^16.0.1:
+next@16.0.10:
   version "16.0.10"
   resolved "https://registry.yarnpkg.com/next/-/next-16.0.10.tgz#74289793cd4e0a577732353aada1d54cfec97556"
   integrity sha512-RtWh5PUgI+vxlV3HdR+IfWA1UUHu0+Ram/JBO4vWB54cVPentCD0e+lxyAYEsDTqGGMg7qpjhKh6dc6aW7W/sA==
