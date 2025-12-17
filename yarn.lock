@@ -2305,14 +2305,6 @@
     "@portabletext/plugin-input-rule" "^1.0.36"
     react-compiler-runtime "^1.0.0"
 
-"@portabletext/react@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@portabletext/react/-/react-5.0.0.tgz#6971b6967d9934a22f5217f196791a44387e6978"
-  integrity sha512-ZEYhjsiUn2Dvrhyao3qAvi6C/re9ZBt2atp14dtwWtPruMNgp1uMf3p+URf0pEEhu+rMEh9JeK0A8FgNejEWCg==
-  dependencies:
-    "@portabletext/toolkit" "^4.0.0"
-    "@portabletext/types" "^3.0.0"
-
 "@portabletext/react@^6.0.0":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@portabletext/react/-/react-6.0.0.tgz#1b363488ef8ba10bf3ab6437c813899f313d4542"
@@ -2343,24 +2335,12 @@
     "@portabletext/toolkit" "^5.0.0"
     "@portabletext/types" "^4.0.0"
 
-"@portabletext/toolkit@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@portabletext/toolkit/-/toolkit-4.0.0.tgz#d56479ce31beb02c5a97d8864ef8dd6d44a185fd"
-  integrity sha512-Jj/QIy3vzZCNcxiUGM7KjGhUhyVjch+9pOzotWRARPNe07R6nbF/cRsKL70q5Xizf+6PVtFYwks4CSXKInC+wg==
-  dependencies:
-    "@portabletext/types" "^3.0.0"
-
 "@portabletext/toolkit@^5.0.0":
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/@portabletext/toolkit/-/toolkit-5.0.0.tgz#90d6eced612f4bba5d397813801c684f6b0a00cf"
   integrity sha512-jcDOv1RKO/j08pdnc/6i5tULcAzEYCR41XDVYOqmmX8bvEJbWJabhpVjHT1ls6p27v9gtA4NG2SO5xdMpgWSQQ==
   dependencies:
     "@portabletext/types" "^4.0.0"
-
-"@portabletext/types@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@portabletext/types/-/types-3.0.0.tgz#1e653276a1ed95250f9d3ed88f8b07fbb7bdab95"
-  integrity sha512-7U8+bFcnguNtXr4rwMDj0EvJJDRzLaaof2mQqCjUcqxuuJpAppFaATZgrKmPI1uBgtFMi4unk1nIaOOmLHrX8Q==
 
 "@portabletext/types@^4.0.0":
   version "4.0.0"
