@@ -27,7 +27,7 @@ export default function Navigation() {
 		},
 		{
 			name: 'Mitglied werden',
-			href: '/HotelCentral_230719_Mitgliedschaftsantrag.pdf',
+			href: 'https://easyverein.com/public/hotcentral/applicationform/20049',
 			options: { target: '_blank' }
 		},
 	];
