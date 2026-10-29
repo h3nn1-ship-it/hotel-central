@@ -2092,14 +2092,6 @@
   dependencies:
     "@portabletext/plugin-input-rule" "^7.0.23"
 
-"@portabletext/react@^6.2.0":
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/@portabletext/react/-/react-6.2.0.tgz#8e90d54fef244efcf41af5c64fe9eedccec7b40d"
-  integrity sha512-Z0J/AWrvg7GyDfEBQRRhi6ZpxLOsN4/QbU8KhTwfa6r2ELiRaMa4gkHE9wfs3V1ozNDrTG4IRr+8yBnHNDnAqA==
-  dependencies:
-    "@portabletext/toolkit" "^5.0.2"
-    "@portabletext/types" "^4.0.2"
-
 "@portabletext/react@^7.0.1":
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/@portabletext/react/-/react-7.0.1.tgz#c87f0cb6cb4ca54a0b6efabdb94206c3aa5b8bd7"
@@ -6965,10 +6957,10 @@ typeid-js@^1.2.0:
   dependencies:
     uuid "^10.0.0"
 
-typescript@^5.9.3:
-  version "5.9.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.9.3.tgz#5b4f59e15310ab17a216f5d6cf53ee476ede670f"
-  integrity sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==
+typescript@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-6.0.3.tgz#90251dc007916e972786cb94d74d15b185577d21"
+  integrity sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==
 
 "ui5@npm:@sanity/ui@5.0.0-alpha.14":
   version "5.0.0-alpha.14"
