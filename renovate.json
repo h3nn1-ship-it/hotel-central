@@ -1,13 +1,30 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended"
-  ],
+  "extends": ["config:best-practices"],
+  "schedule": ["before 6am on monday"],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "automergeType": "branch"
+  },
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch"],
+      "description": "Non-major updates: one group, merged silently without a PR once Vercel is green",
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchCurrentVersion": "!/^0/",
+      "groupName": "non-major dependencies",
       "automerge": true,
-      "automergeType": "pr"
+      "automergeType": "branch"
+    },
+    {
+      "description": "Majors wait for a checkbox in the Dependency Dashboard instead of opening PRs",
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
+    },
+    {
+      "description": "Keep Node types in line with engines.node",
+      "matchPackageNames": ["@types/node"],
+      "allowedVersions": "22.x"
     }
   ]
 }
