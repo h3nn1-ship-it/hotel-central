@@ -1,14 +1,12 @@
 'use client';
 
 import { createMouseSpinner, imageAroundMouse } from '../utility/animations';
-import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import LogoHotelCentral from '@/components/icons/hotelCentral';
 import SmileyRing from '@/components/icons/smiley';
 import LogoIconStuttgart from '@/components/icons/logoIconStuttgart';
 import Link from 'next/link';
 import { PageContent } from '../types/pageContent';
-import { defineQuery } from 'groq';
-import { client, sanityOptions } from '../sanity/client';
 import { PortableText, PortableTextComponents } from '@portabletext/react';
 
 const components: PortableTextComponents = {
@@ -17,31 +15,14 @@ const components: PortableTextComponents = {
 	},
 };
 
-export default function Festival2024() {
+export default function Festival2024({ content }: { content?: PageContent }) {
 	const smileyRef = useRef<any>(null);
-
-	const [isMounted, setIsMounted] = useState(false);
-	const [content, setContent] = useState<PageContent | undefined>(undefined);
-
-	const getContent = async () => {
-		const CONTENT_QUERY = defineQuery(`*[_type == 'page' && name == 'Festival2024'][0]{content}`);
-		setContent(await client.fetch<PageContent>(CONTENT_QUERY, {}, sanityOptions));
-	};
-
-	useEffect(() => {
-		setIsMounted(true);
-		void getContent();
-	}, []);
 
 	useLayoutEffect(() => {
 		if (smileyRef.current) {
 			createMouseSpinner(smileyRef.current);
 		}
-	}, [isMounted]);
-
-	if (!isMounted) {
-		return null;
-	}
+	}, []);
 
 	return (
 		<div className={'content pt-[80px]'} onMouseMove={e => imageAroundMouse(e, smileyRef.current)}>

@@ -1,24 +1,7 @@
+// Fixed timezone so server-rendered times match Stuttgart, not the server's UTC
 export const formatDateTime = (isoString: string) => {
-	const date = new Date(isoString);
+	const format = (options: Intl.DateTimeFormatOptions) =>
+		new Date(isoString).toLocaleString('de-DE', { timeZone: 'Europe/Berlin', ...options });
 
-	const months = [
-		'Januar',
-		'Februar',
-		'März',
-		'April',
-		'Mai',
-		'Juni',
-		'Juli',
-		'August',
-		'September',
-		'Oktober',
-		'November',
-		'Dezember',
-	];
-
-	const day = date.getDate();
-	const month = months[date.getMonth()];
-	const hour = date.getHours();
-
-	return `${day}. ${month} | ${hour} Uhr`;
+	return `${format({ day: 'numeric' })}. ${format({ month: 'long' })} | ${format({ hour: 'numeric' })}`;
 };

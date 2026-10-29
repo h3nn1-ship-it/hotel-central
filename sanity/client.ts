@@ -1,6 +1,6 @@
 import { createClient } from 'next-sanity';
 
-export const sanityOptions = { next: { revalidate: 60 * 1000 } };
+export const sanityOptions = { next: { revalidate: 60 } };
 
 export const client = createClient({
 	projectId: '4l6zibbo',

@@ -19,10 +19,11 @@ export default function Navigation() {
 		{ name: 'Vision', href: '/vision' },
 		/*{ name: 'Events', href: '/events' },*/
 		{
-			name: 'Festival', href: 'http://hotelcentral.live', subItems: [
+			name: 'Festival', href: 'https://hotelcentral.live', subItems: [
 				{ name: '2023', href: '/festival/2023' },
 				{ name: '2024', href: '/festival/2024' },
-				{ name: '2025', href: 'https://hotelcentral.live/' }
+				{ name: '2025', href: 'https://hc-festival-2025.webflow.io/' },
+				{ name: '2026', href: 'https://hotelcentral.live/' }
 			]
 		},
 		{
@@ -114,7 +115,7 @@ export default function Navigation() {
 									</Link>
 									{item.subItems && (
 										<div
-											className='md:absolute top-8 -left-16 z-10 md:hidden rounded-lg md:bg-white md:shadow dropdown-menu md:group-hover:block'>
+											className='md:absolute top-8 md:left-1/2 md:-translate-x-1/2 z-10 md:hidden rounded-lg md:bg-white md:shadow dropdown-menu md:group-hover:block'>
 											<ul className='flex flex-row text-sm text-gray-700 justify-center'>
 												{item.subItems.map((subItem) => (
 													<li key={subItem.name}>

@@ -1,5 +1,3 @@
-'use client';
-import { useEffect, useState } from 'react';
 import { client, sanityOptions } from '../sanity/client';
 import { defineQuery } from 'groq';
 import { PortableText, PortableTextComponents } from '@portabletext/react';
@@ -11,17 +9,9 @@ const components: PortableTextComponents = {
 	},
 };
 
-export default function Vision() {
-	const [content, setContent] = useState<PageContent | undefined>(undefined);
-
-	useEffect(() => {
-		void getContent();
-	}, []);
-
-	const getContent = async () => {
-		const CONTENT_QUERY = defineQuery(`*[_type == 'page' && name == 'Vision'][0]{headline, content}`);
-		setContent(await client.fetch<PageContent>(CONTENT_QUERY, {}, sanityOptions));
-	};
+export default async function Vision() {
+	const CONTENT_QUERY = defineQuery(`*[_type == 'page' && name == 'Vision'][0]{headline, content}`);
+	const content = await client.fetch<PageContent>(CONTENT_QUERY, {}, sanityOptions);
 
 	return (
 			<div
