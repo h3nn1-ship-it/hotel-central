@@ -29,7 +29,7 @@
     "@tailwindcss/postcss": "4.3.5",
     "@types/node": "22.20.5",
     "@types/react": "19.3.0",
-    "autoprefixer": "10.6.2",
+    "autoprefixer": "10.7.0",
     "postcss": "8.5.33",
     "prettier": "3.10.1",
     "typescript": "5.9.3"
